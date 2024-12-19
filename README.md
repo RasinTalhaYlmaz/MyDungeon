@@ -1,4 +1,4 @@
-# **Text-Based Dungeon Game**
+# MORIA DUNGEONS**
 
 ## **About**  
 **Text-Based Dungeon Game** is a thrilling text-based adventure game where players embark on a dungeon exploration journey. Players can navigate through interconnected rooms, battle creatures, collect valuable items, and fight to survive in a dangerous environment. This game is fully developed in the **C programming language**.
