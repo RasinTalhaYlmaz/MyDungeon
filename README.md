@@ -23,3 +23,15 @@
 1. Clone the repository to your local machine:  
    ```bash
    git clone https://github.com/https://github.com/RasinTalhaYlmaz/MyDungeon.git
+2. Navigate to the project directory:
+   ```bash
+   cd MyDungeon
+3. Compile the game using the Makefile:
+   ```bash
+   make
+
+### Execution
+After compiling, start the game with:
+```bash
+./game
+```
