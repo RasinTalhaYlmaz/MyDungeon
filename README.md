@@ -7,9 +7,8 @@
 
 ## **Features**  
 - **Interconnected Rooms**: Explore a rich game world with rooms linked in various directions.  
-- **Item System**: Pick up, use, or exchange items to enhance your gameplay.  
+- **Item System**: Lool, pick up, or drop items to enhance your gameplay.  
 - **Combat Mechanics**: Engage in strategic battles against various types of creatures.  
-- **Save and Load**: Save your progress and continue your adventure later.  
 
 ---
 
