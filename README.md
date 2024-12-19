@@ -22,4 +22,8 @@
 ### **Installation**  
 1. Clone the repository to your local machine:  
    ```bash
-   git clone https://github.com/mustafaBulut1/Text-Based-Dungeon-Game.git
+ https://github.com/RasinTalhaYlmaz/MyDungeon.git
+
+make
+./game.exe
+
