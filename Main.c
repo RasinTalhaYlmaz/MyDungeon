@@ -92,11 +92,10 @@ int main() {
         parse_command(command, player, &currentRoom);
         
         if (strcmp(command, "exit") == 0) {
-            break;  // Çıkış yap
+            break; 
         }
     }
 
-    // Bellek temizliği
     free_room(currentRoom);
     free(player);
 
