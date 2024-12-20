@@ -64,7 +64,7 @@ SpecialItem *create_special_item(Player *player) {
     }
 
     item->isSpecial = true;
-    item->damage = 0;  // Başlangıçta damage sıfır.
+    item->damage = 0; 
 
     if (strcmp(item->name, "Pan") == 0) {
         item->damage = player->strength * 3;
