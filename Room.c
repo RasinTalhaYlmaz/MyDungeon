@@ -142,22 +142,13 @@ void describe_room(Room *room) {
     }
 }
 
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-#include <time.h>
-
-// Oyunla ilgili diğer başlık dosyalarınız
-
 Room *create_final_room(Item **items) {
-    // Oda bellek tahsisi
     Room *room = malloc(sizeof(Room));
     if (!room) {
         printf("Failed to allocate memory for room.\n");
         return NULL;
     }
 
-    // Oda açıklamasını ayarlama
     room->description = strdup("In this place there is an evil you can not even imagine! This place smells like death and decay. You must be very careful!");
     if (!room->description) {
         printf("Failed to allocate memory for room description.\n");
@@ -165,7 +156,6 @@ Room *create_final_room(Item **items) {
         return NULL;
     }
 
-    // Rastgele eşya sayısı belirleme (en az 1, en fazla 3)
     room->num_items = rand() % 3 + 1;
     room->items = malloc(sizeof(Item *) * room->num_items);
     if (!room->items) {
@@ -175,12 +165,10 @@ Room *create_final_room(Item **items) {
         return NULL;
     }
 
-    // Eşyaları yaratma
     for (int i = 0; i < room->num_items; i++) {
         room->items[i] = create_item();
         if (!room->items[i]) {
             printf("Failed to create item.\n");
-            // Daha önce ayrılan eşyaları serbest bırakma
             for (int j = 0; j < i; j++) {
                 free(room->items[j]);
             }
@@ -191,11 +179,9 @@ Room *create_final_room(Item **items) {
         }
     }
 
-    // BALROG yaratığını oluşturma
     Creature *BALROG = malloc(sizeof(Creature));
     if (!BALROG) {
         printf("Failed to allocate memory for BALROG.\n");
-        // Bellek sızıntısını önlemek için serbest bırakma işlemleri
         for (int i = 0; i < room->num_items; i++) {
             free(room->items[i]);
         }
